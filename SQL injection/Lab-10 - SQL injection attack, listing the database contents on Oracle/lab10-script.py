@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-BASE_URL = "https://0a4300810419427f801508c000d700bf.web-security-academy.net"
+BASE_URL = "https://0a4300810419427f801508c000d700bf.web-security-academy.net"  # Change
 
 session = requests.Session()
 

@@ -5,7 +5,7 @@ BASE_URL = "https://0a2f006e04d9d75e80c31d8a00ae009f.web-security-academy.net"  
 
 session = requests.Session()
 
-payload = "' UNION SELECT NULL,NULL,NULL--"  # See the payloads in the lab-notes
+payload = "' UNION SELECT NULL,NULL,NULL--"
 
 print("[+] Sending SQL injection payload:", payload)
 
