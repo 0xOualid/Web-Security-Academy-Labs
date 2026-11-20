@@ -1,5 +1,5 @@
 
-## Lab: SQL injection UNION attack, retrieving multiple values in a single column
+Lab: SQL injection UNION attack, retrieving multiple values in a single column
 
 ---
 
