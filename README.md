@@ -2,7 +2,7 @@
 
 Welcome to my PortSwigger Web Security Academy labs repository!
 
-This repository contains my personal notes, payloads, and exploit scripts while solving labs on the PortSwigger Web Security Academy.
+This repository contains my personal notes, payloads, and automation scripts while solving labs on the PortSwigger Web Security Academy.
 
 The goal of this repository is simple:
 
@@ -23,12 +23,14 @@ The goal of this repository is simple:
 .
 ├── SQL injection/
 │   ├── Lab-01 - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data/
-│   │   ├── lab01-notes.txt
-│   │   └── lab01-script.py
+│   │   └── lab01-notes.txt
 │   │
 │   ├── Lab-02 - SQL injection vulnerability allowing login bypass/
-│   │   ├── lab02-notes.txt
-│   │   └── lab02-script.py
+│   │   └── lab02-notes.txt
+│   │
+│   ├── Lab-11 - Blind SQL injection with conditional responses/
+│   │   ├── lab11-notes.txt
+│   │   └── lab11-script.py
 │   │
 │   └── ...
 │
@@ -43,10 +45,9 @@ The goal of this repository is simple:
 
 - Understand common web vulnerabilities
 - Learn how to find and exploit them manually
-- Write my own exploit scripts in Python
+- Write automation scripts in Python
 - Improve problem-solving and testing methodology
 - Get more comfortable with Burp Suite
-- Prepare for bug bounty and web penetration testing
 - Stay consistent with learning and documentation
 
 ---
