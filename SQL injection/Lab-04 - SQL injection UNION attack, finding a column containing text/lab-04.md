@@ -15,7 +15,6 @@ The lab will provide a random value that you need to make appear within the quer
 ' UNION SELECT NULL,NULL,NULL--
 ```
 
-
 2/ Determine the data type of columns
 
 ```sql
