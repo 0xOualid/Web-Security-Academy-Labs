@@ -14,7 +14,6 @@ To solve the lab, log in as the administrator user.
 1/ Determine the number of columns
 
 ```sql
-' UNION SELECT NULL FROM dual--
 ' UNION SELECT NULL, NULL FROM dual--
 ```
 

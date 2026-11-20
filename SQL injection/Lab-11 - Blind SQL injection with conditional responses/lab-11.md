@@ -17,7 +17,9 @@ To solve the lab, log in as the administrator user.
 
 ```sql
 ' AND 1=1--
+```
 
+```sql
 ' AND 1=2--
 ```
 

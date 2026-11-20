@@ -14,7 +14,6 @@ To solve the lab, perform a SQL injection UNION attack that retrieves all userna
 1/ Determine the number of columns
 
 ```sql
-' UNION SELECT NULL--
 ' UNION SELECT NULL,NULL--
 ```
  

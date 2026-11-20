@@ -12,8 +12,6 @@ The lab will provide a random value that you need to make appear within the quer
 1/ Determine the number of columns
 
 ```sql
-' UNION SELECT NULL--
-' UNION SELECT NULL,NULL--
 ' UNION SELECT NULL,NULL,NULL--
 ```
 

@@ -12,7 +12,6 @@ To solve the lab, display the database version string.
 1/ Determine the number of columns
 
 ```sql
-' UNION SELECT NULL FROM dual--
 ' UNION SELECT NULL, NULL FROM dual--
 ```
 
