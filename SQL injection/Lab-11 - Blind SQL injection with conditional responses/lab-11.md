@@ -1,7 +1,4 @@
-
-Lab: Blind SQL injection with conditional responses
-
----
+## Lab: Blind SQL injection with conditional responses
 
 This lab contains a blind SQL injection vulnerability. The application uses a tracking cookie for analytics, and performs a SQL query containing the value of the submitted cookie.
 
@@ -12,6 +9,8 @@ The database contains a different table called users, with columns called userna
 To solve the lab, log in as the administrator user.
 
 ---
+
+## Notes
 
 1/ Confirm that the parameter is vulnerable to "Boolean-based Blind SQL injection"
 
