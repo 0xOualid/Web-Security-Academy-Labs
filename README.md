@@ -23,10 +23,10 @@ The goal of this repository is simple:
 .
 ├── SQL injection/
 │   ├── Lab-01 - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data/
-│   │   └── lab01-notes.md
+│   │   └── lab-01.md
 │   │
 │   ├── Lab-02 - SQL injection vulnerability allowing login bypass/
-│   │   └── lab02-notes.md
+│   │   └── lab-02.md
 │   │
 │   └── ...
 │
