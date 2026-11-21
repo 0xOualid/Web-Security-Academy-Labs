@@ -1,6 +1,6 @@
-# Web Security Academy Labs
+# Web Security Academy Labs Personal Notes
 
-Welcome to my PortSwigger Web Security Academy labs repository!
+Welcome to my Web Security Academy labs repository!
 
 This repository contains my personal notes, payloads, and automation scripts while solving labs on the PortSwigger Web Security Academy.
 
