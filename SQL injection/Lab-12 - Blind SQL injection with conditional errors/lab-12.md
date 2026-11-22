@@ -55,7 +55,6 @@ import string
 url = "https://0a1c0035030184c380d1089c00be00a9.web-security-academy.net"
 
 characters = string.ascii_letters + string.digits
-
 password = ""
 
 session = requests.Session()
