@@ -13,7 +13,7 @@ To solve the lab, enumerate a valid username, brute-force this user's password, 
 
 1/ Intercept the POST request via `Burp`.
 
-2/ Enumerate the username using the wordlist `Candidate usernames` via `Burp Intruder`, then within the Intruder click `Settings` instead of Payloads, and go to `Grep - Extract` click `add` and `Fetch response`, then select the error message `Invalid username or password.` Then start the attack. After that filter with the new `warning` column and notice the subtly different.
+2/ Enumerate the username using the wordlist `Candidate usernames` via `Burp Intruder`, then within the Intruder click `Settings` instead of Payloads, and go to `Grep - Extract` click `add` and `Fetch response`, then select the error message `Invalid username or password.` Then start the attack. After that filter with the new `warning` column and notice the subtly different in the error message.
 
 3/ Set the correct username and brut force the password using the wordlist `Candidate passwords` via `Burp Intruder`, and filtering the results by status code searching for 302.
 
